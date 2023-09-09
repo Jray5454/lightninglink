@@ -1,0 +1,60 @@
+; Domain: lowcarbdr.com
+; Exported (y-m-d hh:mm:ss): 2023-09-09 07:00:15
+;
+; This file is intended for use for informational and archival
+; purposes ONLY and MUST be edited before use on a production
+; DNS server.
+;
+; In particular, you must update the SOA record with the correct
+; authoritative name server and contact e-mail address information,
+; and add the correct NS records for the name servers which will
+; be authoritative for this domain.
+;
+; For further information, please consult the BIND documentation
+; located on the following website:
+;
+; http://www.isc.org/
+;
+; And RFC 1035:
+;
+; http://www.ietf.org/rfc/rfc1035.txt
+;
+; Please note that we do NOT offer technical support for any use
+; of this zone data, the BIND name server, or any other third-
+; party DNS software.
+;
+; Use at your own risk.
+
+
+$ORIGIN lowcarbdr.com.
+
+; SOA Record
+@	3600	 IN 	SOA	ns07.domaincontrol.com.	dns.jomax.net. (
+					2023090900
+					28800
+					7200
+					604800
+					3600
+					) 
+
+; A Record
+@	600	 IN 	A	185.199.108.153
+@	600	 IN 	A	185.199.109.153
+@	600	 IN 	A	185.199.110.153
+@	600	 IN 	A	185.199.111.153
+@	600	 IN 	A	50.62.172.132
+
+; NS Record
+@	3600	 IN 	NS	ns07.domaincontrol.com.
+@	3600	 IN 	NS	ns08.domaincontrol.com.
+
+; TXT Record
+_acme-challenge	3600	 IN 	TXT	"iwh2MJTe15eRJLn4HBU8XZIUyXvqEmT62wyDgpJBjVo"
+_acme-challenge.www	3600	 IN 	TXT	"kEj1SXJ6hr5iQCj582P6EolhcBhlLWWRN740TYIXPaY"
+_cf-custom-hostname	3600	 IN 	TXT	"17239cef-acae-4f54-8f0c-2733dd717c1b"
+_cf-custom-hostname.www	3600	 IN 	TXT	"a6624d1d-4c11-4ff8-99cc-6ffd2012a227"
+
+; CNAME Record
+www	3600	 IN 	CNAME	@
+_domainconnect	3600	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
+
